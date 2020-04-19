@@ -29,122 +29,121 @@
     </nav>
   </header>
 
-  <main>
-      <h1>Подбор программы</h1>
-      <section>
+  <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <section class="selection">
           <h2 class="visually-hidden">Заявка</h2>
-          <p>
+          <p class="selection__description">
             Заполните анкету и мы подберем 
             программу питания для вашего кота  
           </p>
-          <div>
-          <form>
-              <p>
-                  <label for="cat-name">Имя:*</label>
-                  <input id="cat-name" type="text" name="name" value="Барсик">
+          <div class="selection__wrapper">
+          <form class="selection__form">
+              <p class="selection__information">
+                  <label class="selection__item" for="cat-name">Имя:*</label>
+                  <input class="selection__input" id="cat-name" type="text" name="name" value="Барсик">
               </p>
-              <p>
-                  <label for="cat-weight">Вес (кг):*</label>
-                  <input id="cat-weight" type="weight" name="weight" value="7">
+              <p class="selection__information">
+                  <label class="selection__item" for="cat-weight">Вес (кг):*</label>
+                  <input class="selection__input"  id="cat-weight" type="weight" name="weight" value="7">
               </p>
-              <p>
-                <label for="cat-age">Возраст (лет):</label>
-                <input id="cat-age" type="age" name="age" value="7">
+              <p class="selection__information">
+                <label class="selection__item" for="cat-age">Возраст (лет):</label>
+                <input class="selection__input" id="cat-age" type="age" name="age" value="7">
             </p>
           </form>
           </div>
 
-          <div>
-              <fieldset>
-                  <legend>Программа</legend>
-                  <ul>
-                      <li>
-                          <input id="filter-slimming" type="radio" name="program-slimming" value="slimming" checked>
-                          <label for="filter-slimming">Похудение</label>
+          <div class="program-selection">
+              <fieldset class="program-selection__group">
+                  <legend class="program-selection__heading">Программа</legend>
+                  <ul class="program-selection__wrapper">
+                      <li class="program-selection__item">
+                          <input class="program-selection__circle" id="filter-slimming" type="radio" name="program-slimming" value="slimming" checked>
+                          <label class="program-selection__program" for="filter-slimming">Похудение</label>
                       </li>
-                      <li>
-                          <input id="filter-set" type="radio" name="program-set" value="set">
-                          <label for="filter-set">Набор массы</label>  
+                      <li class="program-selection__item">
+                          <input class="program-selection__circle" id="filter-set" type="radio" name="program-set" value="set">
+                          <label class="program-selection__program"  for="filter-set">Набор массы</label>  
                       </li>
-                      <li>
-                          <input id="filter-advice" type="radio" name="program-advice" value="advice">
-                          <label for="filter-advice">Не знаю (Нужен ваш совет)</label> 
+                      <li class="program-selection__item">
+                          <input class="program-selection__circle" id="filter-advice" type="radio" name="program-advice" value="advice">
+                          <label class="program-selection__program"  for="filter-advice">Не знаю (Нужен ваш совет)</label> 
                       </li>
                   </ul>
               </fieldset>
           </div>
       </section>
 
-      <section>
-            <h2>Контактные данные
+      <section class="user-contacts">
+            <h2 class="user-contacts__title">Контактные данные
               (владельца кота)</h2>
-              <img src="#" width="" height="" alt="Полоска">
-              <form>
-               <p>
-                <label for="user-mail">E-mail:*</label>
-                <input id="user-mail" type="e-mail" name="e-mail" value="kuklachev@gmail.com">
-                <img src="#" width="" height="" alt="Иконка письмо">
+              <img class="user-contacts__strip" src="#" width="" height="" alt="Полоска">
+              <form class="user-contacts__form">
+               <p class="user-contacts__description">
+                <label class="user-contacts__item" for="user-mail">E-mail:*</label>
+                <input class="user-contacts__input" id="user-mail" type="e-mail" name="e-mail" value="kuklachev@gmail.com">
+                <img class="user-contacts__icon" src="#" width="" height="" alt="Иконка письмо">
                </p>
-               <p>
-                <label for="user-phone">Телефон:*</label>
-                <input id="user-phone" type="tel" name="phone" value="8 (960) 900-60-90">
-                <img src="#" width="" height="" alt="Иконка телефон">
+               <p class="user-contacts__description">
+                <label class="user-contacts__item"  for="user-phone">Телефон:*</label>
+                <input class="user-contacts__input" id="user-phone" type="tel" name="phone" value="8 (960) 900-60-90">
+                <img class="user-contacts__icon" src="#" width="" height="" alt="Иконка телефон">
                </p> 
               </form>
       </section>
 
-      <section>
-          <h2>Комментарий</h2>
-        <img src="#" width="" height="" alt="Полоска">
-        <form>
-            <textarea name="comment" cols="40" rows="3">Расскажите обо всех повадках кота</textarea>
+      <section class="comment">
+          <h2 class="comment__title"></h2>>Комментарий</h2>
+        <img class="comment__strip" src="#" width="" height="" alt="Полоска">
+        <form class="comment__form">
+            <textarea class="comment__text" name="comment" cols="40" rows="3">Расскажите обо всех повадках кота</textarea>
         </form>
       </section>
 
-      <section>
-        <h2>Дополнительно</h2>
-      <img src="#" width="" height="" alt="Полоска">
-      <form>
-          <fieldset>
-              <legend>Дополнительно</legend>
-              <ul>
-                  <li>
-                      <input id="filter-sweetener" type="checkbox" name="sweetener" checked>
-                      <label for="filter-slimming">Сахарозаменитель</label>  
+      <section class="additionally">
+        <h2 class="additionally__title">Дополнительно</h2>
+      <img class="additionally__strip" src="#" width="" height="" alt="Полоска">
+      <form class="additionally__form">
+          <fieldset class="additionally__group">
+              <legend class="additionally__heading">Дополнительно</legend>
+              <ul class="additionally__list additionally__item">
+                  <li class="additionally__item additionally__item--sweetener">
+                      <input class="additionally__item--input" id="filter-sweetener" type="checkbox" name="sweetener" checked>
+                      <label class="additionally__item--name" for="filter-slimming">Сахарозаменитель</label>  
                   </li>
-                  <li>
-                      <input id="filter-water" type="checkbox" name="water"> 
-                      <label for="filter-water">Питьевая вода</label> 
+                  <li class="additionally__item additionally__item--water">
+                      <input class="additionally__item--input" id="filter-water" type="checkbox" name="water"> 
+                      <label class="additionally__item--name" for="filter-water">Питьевая вода</label> 
                   </li>
-                  <li>
-                    <input id="filter-milk" type="checkbox" name="milk"> 
-                    <label for="filter-milk">Молоко</label> 
-                </li>
-                <li>
-                    <input id="filter-vitamins" type="checkbox" name="vitamins"> 
-                    <label for="filter-vitamins">Витамины</label> 
-                </li>
-              </ul>
-          </fieldset>
+                  <li class="additionally__item additionally__item--milk">
+                    <input class="additionally__item--input" id="filter-milk" type="checkbox" name="milk"> 
+                    <label fclass="additionally__item--name" or="filter-milk">Молоко</label> 
+                  </li>
+                  <li class="additionally__item additionally__item--vitamins">
+                    <input class="additionally__item--input" id="filter-vitamins" type="checkbox" name="vitamins"> 
+                    <label class="additionally__item--name" for="filter-vitamins">Витамины</label> 
+                  </li>
+                 </ul>
+                </fieldset>
       </form>
-      <button type="submit">Отправить заявку</button>
-      <p>* — Обязательные поля</p>
+      <button class="additionally__toggle" type="submit">Отправить заявку</button>
+      <p class="additionally__description">* — Обязательные поля</p>
     </section>
       
-
-      <section>
-        <p>
-          приглашаем 
-          к сотрудничеству 
-          дилеров!
-        </p>
-        <p>
-          ул. Большая 
-          Конюшенная, д. 19/8 
-          Санкт-Петербург
-        </p>
-        <img src="#" width="" height="" alt="Карта">
-      </section>
+    <section class="contacts">
+      <p class="contacts__description">
+        приглашаем 
+        к сотрудничеству 
+        дилеров!
+      </p>
+      <p class="contacts__address">
+        ул. Большая 
+        Конюшенная, д. 19/8 
+        Санкт-Петербург
+      </p>
+      <img class="contacts__" src="#" width="" height="" alt="Карта">
+    </section>
   </main>
 
   <footer class="page-footer">
