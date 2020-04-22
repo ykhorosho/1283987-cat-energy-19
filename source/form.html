@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -32,11 +33,11 @@
   <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
       <section class="selection">
-          <h2 class="visually-hidden">Заявка</h2>
-          <p class="selection__description">
-            Заполните анкету и мы подберем 
-            программу питания для вашего кота  
-          </p>
+        <h2 class="visually-hidden">Заявка</h2>
+        <p class="selection__description">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </p>
           <div class="selection__wrapper">
           <form class="selection__form">
               <p class="selection__information">
@@ -59,16 +60,16 @@
                   <legend class="program-selection__heading">Программа</legend>
                   <ul class="program-selection__wrapper">
                       <li class="program-selection__item">
-                          <input class="program-selection__circle" id="filter-slimming" type="radio" name="program-slimming" value="slimming" checked>
-                          <label class="program-selection__program" for="filter-slimming">Похудение</label>
+                        <input class="program-selection__circle" id="filter-slimming" type="radio" name="program-slimming" value="slimming" checked>
+                        <label class="program-selection__program" for="filter-slimming">Похудение</label>
                       </li>
                       <li class="program-selection__item">
-                          <input class="program-selection__circle" id="filter-set" type="radio" name="program-set" value="set">
-                          <label class="program-selection__program"  for="filter-set">Набор массы</label>  
+                        <input class="program-selection__circle" id="filter-set" type="radio" name="program-set" value="set">
+                        <label class="program-selection__program" for="filter-set">Набор массы</label>
                       </li>
                       <li class="program-selection__item">
-                          <input class="program-selection__circle" id="filter-advice" type="radio" name="program-advice" value="advice">
-                          <label class="program-selection__program"  for="filter-advice">Не знаю (Нужен ваш совет)</label> 
+                        <input class="program-selection__circle" id="filter-advice" type="radio" name="program-advice" value="advice">
+                        <label class="program-selection__program" for="filter-advice">Не знаю (Нужен ваш совет)</label>
                       </li>
                   </ul>
               </fieldset>
@@ -80,17 +81,17 @@
               (владельца кота)</h2>
               <img class="user-contacts__strip" src="#" width="" height="" alt="Полоска">
               <form class="user-contacts__form">
-               <p class="user-contacts__description">
+              <p class="user-contacts__description">
                 <label class="user-contacts__item" for="user-mail">E-mail:*</label>
                 <input class="user-contacts__input" id="user-mail" type="email" name="e-mail" value="kuklachev@gmail.com">
                 <img class="user-contacts__icon" src="#" width="" height="" alt="Иконка письмо">
-               </p>
-               <p class="user-contacts__description">
+              </p>
+              <p class="user-contacts__description">
                 <label class="user-contacts__item"  for="user-phone">Телефон:*</label>
                 <input class="user-contacts__input" id="user-phone" type="tel" name="phone" value="8 (960) 900-60-90">
                 <img class="user-contacts__icon" src="#" width="" height="" alt="Иконка телефон">
-               </p> 
-              </form>
+              </p>
+            </form>
       </section>
 
       <section class="comment">
@@ -109,38 +110,38 @@
               <legend class="additionally__heading">Дополнительно</legend>
               <ul class="additionally__list">
                   <li class="additionally__sweetener">
-                      <input class="additionally__input" id="filter-sweetener" type="checkbox" name="sweetener" checked>
-                      <label class="additionally__name" for="filter-slimming">Сахарозаменитель</label>  
+                    <input class="additionally__input" id="filter-sweetener" type="checkbox" name="sweetener" checked>
+                    <label class="additionally__name" for="filter-slimming">Сахарозаменитель</label>
                   </li>
                   <li class="additionally__item">
-                      <input class="additionally__input" id="filter-water" type="checkbox" name="water"> 
-                      <label class="additionally__name" for="filter-water">Питьевая вода</label> 
+                    <input class="additionally__input" id="filter-water" type="checkbox" name="water">
+                    <label class="additionally__name" for="filter-water">Питьевая вода</label>
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__input" id="filter-milk" type="checkbox" name="milk"> 
-                    <label class="additionally__name" for="filter-milk">Молоко</label> 
+                    <input class="additionally__input" id="filter-milk" type="checkbox" name="milk">
+                    <label class="additionally__name" for="filter-milk">Молоко</label>
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__input" id="filter-vitamins" type="checkbox" name="vitamins"> 
-                    <label class="additionally__name" for="filter-vitamins">Витамины</label> 
+                    <input class="additionally__input" id="filter-vitamins" type="checkbox" name="vitamins">
+                    <label class="additionally__name" for="filter-vitamins">Витамины</label>
                   </li>
-                 </ul>
+              </ul>
                 </fieldset>
       </form>
       <button class="additionally__toggle" type="submit">Отправить заявку</button>
       <p class="additionally__description">* — Обязательные поля</p>
     </section>
-      
+
     <section class="contacts">
       <p class="contacts__description">
-        приглашаем 
-        к сотрудничеству 
-        дилеров!
+      приглашаем
+      к сотрудничеству
+      дилеров!
       </p>
       <p class="contacts__address">
-        ул. Большая 
-        Конюшенная, д. 19/8 
-        Санкт-Петербург
+      ул. Большая
+      Конюшенная, д. 19/8
+      Санкт-Петербург
       </p>
       <img class="contacts__map" src="#" width="" height="" alt="Карта">
     </section>
@@ -148,8 +149,8 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo">
-    <img class="page-footer__logo-image" src="#" width="" height="" alt="Логотип Кэт Энерджи"> 
-    </a>
+    <img class="page-footer__logo-image" src="#" width="" height="" alt="Логотип Кэт Энерджи">
+  </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -167,10 +168,9 @@
     <div class="page-footer_copyright">
       <p class="page-footer_copyright__description">HTML Academy</p>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="#" width="" height="" alt="Логотип HTML Academy"> 
+        <img src="#" width="" height="" alt="Логотип HTML Academy">
       </a>
     </div>
   </footer>
-
-</body>
+  </body>
 </html>
