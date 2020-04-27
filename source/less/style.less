@@ -6,6 +6,7 @@
 @import "blocks/example.less";
 @import "blocks/contacts.less";
 @import "blocks/page-footer.less";
+@import "blocks/page-header.less";
 
 /* Файл catalog.html */
 @import "blocks/catalogs.less";
@@ -39,6 +40,19 @@ body {
   background-color: white;
   width: 320px;
   margin: 0px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1440px auto;
+  }
 }
 
 /* Файл catalog.html */

@@ -22,13 +22,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a>Главная</a>
+                <a class="site-list__item-link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="catalog.html">Каталог продукции</a>
+                <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
+                <a class="site-list__item-link" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -48,29 +48,37 @@
       <div class="programs__wrapper">
         <ul class="programs__list programs__item">
           <li class="programs__item programs__item--slim">
-            <img class="programs__item-logo programs__item-logo--slim" src="img/icon-cat-slim.svg" width="35" height="49" alt="Лого Похудение">
-            <h3 class="programs__title">Похудение</h3>
+            <span class="programs__part-slim">
+              <img class="programs__item-logo programs__item-logo--slim" src="img/icon-cat-slim.svg" width="35" height="49" alt="Лого Похудение">
+              <h3 class="programs__title">Похудение</h3>
+            </span>
             <p class="programs__description">
               Ваш кот весит больше собаки и
               почти утратил способность лазить
               по деревьям? Пора на диету! Cat
               Energy Slim поможет вашему
               питомцу сбросить лишний вес.</p>
-            <a href="#">Каталог Slim</a>
-            <img class="programs__item-icon programs__item-icon" src="img/right-arrow-long-svg.svg" width="25" height="12" alt="Стрелка">
+              <span class="programs__part-two">
+              <a href="#">Каталог Slim</a>
+              <img class="programs__item-icon" src="img/right-arrow-long-svg.svg" width="25" height="12" alt="Стрелка">
+            </span>
           </li>
           <li class="programs__item programs__item--pro">
-            <img class="programs__item-logo programs__item-logo--pro" src="img/icon-cat-pro-copy-2.svg" width="67" height="28" alt="Лого Набор массы">
-            <h3 class="programs__title">Набор массы</h3>
+            <span class="programs__part-pro">
+              <img class="programs__item-logo programs__item-logo--pro" src="img/icon-cat-pro-copy-2.svg" width="67" height="28" alt="Лого Набор массы">
+              <h3 class="programs__title">Набор массы</h3>
+            </span>
             <p class="programs__description">
               Заработать авторитет среди
               дворовых котов и даже собак?
               Серия Cat Energy Pro поможет
               вашему коту нарастить
               необходимые мышцы!</p>
-            <a href="#">Каталог pro</a>
-            <img class="programs__item-icon programs__item-icon" src="img/right-arrow-long-svg.svg" width="25" height="12" alt="Стрелка">
-          </li>
+              <span class="programs__part-two">
+                <a href="#">Каталог pro</a>
+                <img class="programs__item-icon programs__item-icon" src="img/right-arrow-long-svg.svg" width="25" height="12" alt="Стрелка">
+              </span>
+            </li>
         </ul>
       </div>
     </section>
@@ -120,45 +128,53 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто
+      <div class="example__part">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто
         заменив свой обычный корм на Cat
         Energy Slim. Отличный результат без
         изнуряющих тренировок! При этом он
         не менял своих привычек и по-
         прежнему спит по 16 часов в день.</p>
-        <fieldset class="example__group">
-          <legend class="example__heading">
+        <span class="example__group">
+          <fieldset class="example__fieldset">
+            <legend class="example__heading">
             снижение
             веса
           </legend>
           <p class="example__heading-info">5 кг</p>
-        </fieldset>
-        <fieldset class="example__group">
+         </fieldset>
+         <fieldset class="example__fieldset">
           <legend class="example__heading">
             затрачено
             времени
           </legend>
           <p class="example__heading-info">60 дней</p>
-        </fieldset>
+         </fieldset>
+        </span>
         <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
         <img class="example__image" src="img/before-mobile.png" width="311" height="232" alt="Кот">
-        <button class="example__toggle">Было</button>
-        <button class="example__scale"><img class="example__toggle-scale" src="#" width="" height="" alt="Шкала"></button>
-        <button class="example__toggle">Стало</button>
+        <span class="example__comparison">
+          <button class="example__toggle">Было</button>
+          <button class="example__scale"><img class="example__toggle-scale" src="#" width="" height="" alt="Шкала"></button>
+          <button class="example__toggle">Стало</button>
+        </span>
+      </div>
     </section>
 
     <section class="contacts">
-      <p class="contacts__description">
+      <span class="contacts__part">
+        <p class="contacts__description">
         приглашаем
         к сотрудничеству
         дилеров!
-      </p>
-      <p class="contacts__address">
+        </p>
+        <p class="contacts__address">
         ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург
-      </p>
+        </p>
+      </span>
       <img class="contacts__map" src="img/map.png" width="320" height="400" alt="Карта">
       <img class="contacts__place" src="img/map-pin-png-50.png" width="55" height="53" alt="Место">
     </section>

@@ -1,27 +1,33 @@
+.programs{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding-top: 15px;
+  margin-left: 20px;
+}
+
 .programs__toggle{
     width: 280px;
     height: 40px;
     background-color: @leaf;
 }
 
-/* button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    font-family: Oswald;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-  }*/
+.programs__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+  padding-top: 10px;
+}
 
 .programs__list{
-    list-style: none; /* Отменим точки у списка*/
+  display: flex;
+  flex-direction: column;
+  list-style: none; /* Отменим точки у списка*/
 }
 
 .programs__item{
-  width: 280px;
+  width: 240px;
   background-color: @white-three;
 }
 
@@ -34,4 +40,67 @@
   text-align: left;
   color: @black-two;
   text-transform: uppercase;
+}
+
+.programs__item--slim{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  margin-left: -20px;
+}
+
+.programs__part-slim{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 180px;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.programs__item-logo--slim{
+  padding-left: 10px;
+  padding-top: 15px;
+  }  
+
+.programs__description{
+  padding-top: 24px;
+  width: 230px;
+  height: 86px;
+}
+
+.programs__part-two{
+  padding-top: 35px;
+}
+
+.programs__item-icon{
+  padding-left: 8px;
+}
+
+.programs__item--pro{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  margin-left: -20px;
+}
+  
+.programs__item--pro{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  margin-left: -20px;
+  margin-top: 60px;
+}
+
+.programs__part-pro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 212px;
+  height: 50px;
+  margin-left: -5px;
+}
+
+.programs__item-logo--pro{
+  padding-top: 30px;
 }

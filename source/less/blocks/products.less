@@ -1,7 +1,8 @@
 .products{
     display: flex;
     flex-direction: column;
-    background-color: green;
+    justify-content: space-between;
+    height: 440px;
 }
 
 .products__slogan {
@@ -10,6 +11,7 @@
     font-size: 36px;
     text-align: center;
     line-height: 1;
+    padding-top: 0px;
 }
 
 .products__intro{
@@ -25,7 +27,20 @@
     text-transform: uppercase;
 }
 
+.products__slogan{
+    padding-top: 16px;
+}
+
+.products__intro{
+    margin-top: -10px;
+}
+
 .products__image{
-    display: flex;
-    padding-top: -200px;
+    z-index: -1;
+    margin-top: -150px;
+}
+
+.products__product{
+    margin-top: -140px;
+    padding-left: 20px;
 }
