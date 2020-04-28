@@ -26,32 +26,31 @@
     flex-direction: column;
     justify-content: space-between;
     height: 153px;
-    padding-top: 21px;
+    padding-top: 30px;
     margin-left: 10px;
     text-align: center;
 }
 
-@media (min-width: @tablet-width) {
+
+@media (min-width: @tablet-width){
     .site-list__item-link {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 62px;
         font-family: Oswald;
         font-size: 18px;
         font-weight: normal;
-         font-stretch: normal;
-         font-style: normal;
-         line-height: 1.39;
-         letter-spacing: normal;
-         text-align: left;
-         color: @black-two;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.39;
+        letter-spacing: normal;
+        text-align: left;
+        color: @black-two;
+      }
+      .main-nav__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 440px;
+        margin-left: -50px;
+        margin-top: 0px;
     }
-  }
-  
-  
-  @media (min-width: @desktop-width) {
-    .page-header {
-    }
-  }
-  
+    
+}
