@@ -12,7 +12,8 @@
     letter-spacing: normal;
     text-align: left;
     color: #444444;
-    margin-top: -2px;
+    margin-top: 0px;
+    padding-top: 5px;
 }
 
 .page-footer__logo{
@@ -37,4 +38,22 @@
     width: 280px;
     padding-left: 20px;
     padding-top: 28px;
+}
+
+@media (min-width: @tablet-width){
+    .page-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: @white-three;
+        width: 768px;
+        height: 150px;
+    }
+    .page-footer__logo{
+        display: flex;
+        padding-left: 31px;
+        padding-top: 39px;
+    }
+    
+    
 }

@@ -65,9 +65,8 @@
         flex-direction: column;
         justify-content: space-between;
         height: 780px;
-        padding-top: 10px;
-        padding-left: 118px;
         margin-top: -60px;
+        padding-left: 120px;
     } 
 
     .products__slogan{
@@ -90,12 +89,23 @@
         text-align: left;
         color: @black-two;
         text-transform: uppercase;
-        margin-top: -70px;
+        margin-top: -170px;
       }
-      .products__toggle{
-        width: 245px;
-        height: 52px;
-        margin-left: 20px;
-        background-color: @leaf;
+
+    .products__image{
+        display: none;
+    }
+
+    .products__product{
+        z-index: -1;
+    }
+
+    .products__toggle{
+    width: 245px;
+    height: 52px;
+    margin-left: -3px;
+    margin-top: -100px;
+    background-color: @leaf;
+    
     }
 }
