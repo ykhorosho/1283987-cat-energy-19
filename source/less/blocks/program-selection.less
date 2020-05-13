@@ -1,5 +1,10 @@
 .program-selection__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 105px;
     list-style: none; /* Отменим точки у списка*/
+    padding: 0px;
 }
 
 .program-selection__hidden{
@@ -20,4 +25,34 @@
     text-align: left;
     color: #222222;
     text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width){
+    .program-selection{
+        width: 630px;
+        height: 196px;
+        align-items: center;
+        opacity: 0.5;
+        border: solid 1px #cdcdcd;
+    }
+
+    .program-selection__program{
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #222222;
+        text-transform: uppercase;
+    }
+
+    .program-selection__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 133px;
+        list-style: none; /* Отменим точки у списка*/
+        padding: 0px;
+    }
 }

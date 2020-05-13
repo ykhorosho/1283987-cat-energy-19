@@ -44,21 +44,19 @@
           Заполните анкету и мы подберем
           программу питания для вашего кота
         </p>
-          <div class="selection__wrapper">
           <form class="selection__form">
               <p class="selection__information">
                   <label class="selection__item" for="cat-name">Имя:*</label>
-                  <input class="selection__input" id="cat-name" type="text" name="name" value="Барсик">
+                  <input class="selection__input selection__input--name" id="cat-name" type="text" name="name" value="Барсик">
               </p>
               <p class="selection__information">
                   <label class="selection__item" for="cat-weight">Вес (кг):*</label>
-                  <input class="selection__input"  id="cat-weight" type="number" name="weight" value="7">
+                  <input class="selection__input selection__input--low"  id="cat-weight" type="number" name="weight" value="7">
               </p>
               <p class="selection__information">
                 <label class="selection__item" for="cat-age">Возраст (лет):</label>
-                <input class="selection__input" id="cat-age" type="number" name="age" value="7">
+                <input class="selection__input selection__input--old" id="cat-age" type="number" name="age" value="7">
             </p>
-          </div>
 
           <div class="program-selection">
               <fieldset class="program-selection__group">
@@ -84,16 +82,18 @@
       <section class="user-contacts">
             <h2 class="user-contacts__title">Контактные данные (владельца кота)</h2>
             <span class="user-contacts__strip"></span>
+            <div class="user-contacts__block">
               <p class="user-contacts__description">
                 <label class="user-contacts__item" for="user-mail">E-mail:*</label>
-                <input class="user-contacts__input" id="user-mail" type="email" name="e-mail" value="kuklachev@gmail.com">
-                <img class="user-contacts__icon" src="img/mail-svg.svg" width="18" height="14" alt="Иконка письмо">
+                <input class="user-contacts__input user-contacts__input--email" id="user-mail" type="email" name="e-mail" value="kuklachev@gmail.com">
+                <img class="user-contacts__icon-email" src="img/mail-svg.svg" width="18" height="14" alt="Иконка письмо">
               </p>
               <p class="user-contacts__description">
                 <label class="user-contacts__item"  for="user-phone">Телефон:*</label>
-                <input class="user-contacts__input" id="user-phone" type="tel" name="phone" value="8 (960) 900-60-90">
-                <img class="user-contacts__icon" src="img/phone-svg.svg" width="21" height="21" alt="Иконка телефон">
+                <input class="user-contacts__input user-contacts__input--phone" id="user-phone" type="tel" name="phone" value="8 (960) 900-60-90">
+                <img class="user-contacts__icon-phone" src="img/phone-svg.svg" width="21" height="21" alt="Иконка телефон">
               </p>
+            </div>
       </section>
 
       <section class="comment">
@@ -127,8 +127,10 @@
               </ul>
                 </fieldset>
       </form>
+      <div class="additionally__part"> 
       <button class="additionally__toggle" type="submit">Отправить заявку</button>
       <p class="additionally__description">* — Обязательные поля</p>
+    </div>
     </section>
 
     <section class="contacts">

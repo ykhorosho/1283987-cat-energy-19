@@ -76,17 +76,11 @@
 
 @media (min-width: @tablet-width){
     .works{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         height: 760px;
-        padding-left: 33px;
+        padding-left: 30px;
     }
 
     .works__wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         height: 640px;
         width: 650px;
     }
@@ -97,9 +91,11 @@
         background-color: @leaf;
     }
 
-    .works__item {
+    .works__item{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .works__description{
@@ -113,4 +109,24 @@
         text-align: left;
         color: #444444;
     }
+    .works__item--petal{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--water{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--cutlery{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--time{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    
 }
