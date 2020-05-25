@@ -105,6 +105,10 @@
   padding-top: 15px;
 }
 
+.example__title{
+  padding-left: 20px;
+}
+
 
 @media (min-width: @tablet-width){
   .example {
@@ -199,4 +203,86 @@
     padding-left: 60px;
   }
 
+  .example__title{
+    padding-left: 20px;
+  }
+}
+
+
+@media (min-width: @desktop-width){
+  .example{
+    padding-left: 90px;
+    height: 600px;
+  }
+  .example__description{
+    width: 431px;
+    height: 88px;
+    font-family: Arial;
+    font-size: 16px;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+    padding-left: 110px;
+    padding-top: 80px;
+  }
+
+  .example__heading-info {
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: @black-two;
+    text-transform: uppercase;
+    margin-top: -55px;
+  }
+
+  .example__heading--time{
+    background-color: @white-three;
+  }
+
+  .example__heading--low{
+    background-color: @white-three;
+  }
+
+  .example__part{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background-color: @white-three;
+    width: 1440px;
+    margin-left: -90px;
+    margin-top: 15px;
+    height: 462px;
+
+  }
+  .example__group {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    padding-left: 110px;
+    padding-top: 60px;
+}
+.example__expenses{
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+  height: 55px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: @black-two;
+  text-transform: uppercase;
+  margin-top: 0px;
+  padding-left: 110px;
+}
 }
