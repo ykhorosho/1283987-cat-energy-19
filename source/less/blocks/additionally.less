@@ -147,3 +147,60 @@
     }
 
   }
+
+  @media (min-width: @desktop-width){
+    .additionally__title {
+      font-family: Oswald;
+      font-size: 36px;
+      font-weight: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      color: @black-two;
+      width: 250px;
+      background-color: white;
+      position: absolute;
+      padding-left: 40px;
+      margin-left: 50px;
+      }
+
+      .additionally__strip{
+        display: block;
+        width: 1440px;
+        height: 3px;
+        background-color: @leaf;
+        left: -20px;
+        position: relative;
+        top: 50px;
+        z-index: -1;
+      }
+
+      .additionally__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: none;
+        width: 1130px;
+        padding-left: 80px;
+      }
+
+      .additionally__toggle{
+        width: 568px;
+        height: 52px;
+        background-color: @leaf;
+      }
+
+      .additionally__part{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 840px;
+        padding-left: 90px;
+      }
+
+      .additionally{
+        height: 280px;
+      }
+
+
+  }

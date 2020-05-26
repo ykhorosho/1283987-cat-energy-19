@@ -6,7 +6,6 @@
   letter-spacing: normal;
   text-align: left;
   color: @black-two;
-  padding-left: 22px;
   padding-top: 15px;
 }
 
@@ -33,7 +32,6 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
-  padding-bottom: 20px;
 }
 
 .catalogs__order{
@@ -61,6 +59,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 325px;
+    height: 210px;
   }
 
   .catalogs__two{
@@ -133,7 +132,11 @@
   background-color: @white-three;
 }
 
-.catalogs__all {
+.catalogs__position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1670px;
   font-family: Oswald;
   font-size: 16px;
   font-weight: normal;
@@ -161,17 +164,21 @@
     text-align: left;
     color: @black-two;
     width: 430px;
-    padding-left: 110px;
     margin-top: -70px;
   }
+
   .catalogs{
+    padding-top: 50px;
+  }
+
+  .catalogs__position{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    padding-left: 33px;
     width: 708px;
     height: 2230px;
-    padding-left: 33px;
+    padding-left: 10px;
   }
 
   .catalogs__title {
@@ -341,14 +348,21 @@
 
 @media (min-width: @desktop-width){
   .catalogs{
+    padding-left: 113px;
+  }
+
+  .catalogs__name{
+    padding-top: 60px;
+  }
+
+  .catalogs__position{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 33px;
     width: 1220px;
     height: 1200px;
-    padding-left: 110px;
-    padding-top: 50px;
+    padding: 0;
+    padding-top: 100px;
   }
 
   .catalogs__list {

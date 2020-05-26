@@ -69,7 +69,7 @@
 
 .goods{
   padding-left: 20px;
-  height: 600px;
+  height: 900px;
 }
 
 .goods__list{
@@ -79,10 +79,14 @@
   padding-bottom: 15px;
 }
 
+.goods__alignment{
+  height: 512px;
+}
+
 @media (min-width: @tablet-width){
   .goods{
     padding-left: 30px;
-    height: 760px;
+    height: 1100px;
   }
 
   .goods__strip{
@@ -109,7 +113,7 @@
   }
   .goods__name{
     font-family: Oswald;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1;
     letter-spacing: normal;
@@ -150,7 +154,8 @@ width: 640px;
     display: flex;
     justify-content: space-between;
     width: 290px;
-    padding-bottom: 15px;
+    padding: 0;
+    align-items: center;
   }
   .goods__order {
     width: 633px;
@@ -231,4 +236,41 @@ width: 640px;
     height: 289px;
     padding-left: 40px;
   }
+}
+
+@media (min-width: @desktop-width){
+  .goods__title{
+    width: 374px;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black-two;
+    padding-left: 30px;
+    margin-left: 50px;
+    background-color: white;
+  }
+
+  .goods__alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  height: 275px;
+  padding-left: 90px;
+  padding-top: 55px;
+  }
+
+  .goods__all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1415px;
+  }
+
+  .goods{
+    height: 500px;
+  }
+
 }

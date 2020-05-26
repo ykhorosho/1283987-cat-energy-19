@@ -7,9 +7,8 @@
     text-align: center;
     color: white;
     width: 170px;
-    padding-left: 80px;
     position: absolute;
-    top: 40px;
+    padding-left: 60px;
 }
 
 .present__image{
@@ -17,26 +16,19 @@
     padding-left: 20px;
 }
 
-.present__part{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 170px;
-    position: absolute;
-    top: 100px;
-}
-
-.present__icon{
-left: 140px;
-}
-
 .present{
     position: relative; 
     background-image: url(../img/gift-photo-mobile-jpg.png);
     width: 280px;
     height: 289px;
-    margin-left: 20px;
+    margin-top: 57px;
 }
+
+.present__icon {
+    padding-left: 90px;
+}
+
+
 
 
 @media (min-width: @tablet-width){
@@ -47,10 +39,8 @@ left: 140px;
         line-height: 1.25;
         letter-spacing: normal;
         text-align: left;
-        color: black;
+        color: white;
         width: 160px;
-        margin-top: -105px;
-        padding-left: 80px;
     }  
 
     .present__part{
@@ -60,4 +50,32 @@ left: 140px;
         position: absolute;
         width:500px;
     }
+
+    .present {
+        position: relative;
+        background-image: url(../img/gift-photo-mobile-jpg.png);
+        width: 245px;
+        height: 289px;
+        margin-top: 40px;
+        margin-right: 110px;
+    }
+
+    .present__icon {
+        padding-left: 90px;
+        padding-top: 80px;
+    }
+
+    .present__description {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: white;
+        width: 170px;
+        padding-left: 40px;
+        padding-top: 180px;
+    }
+    
 }
