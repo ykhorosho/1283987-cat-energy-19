@@ -1,15 +1,18 @@
 .program-selection__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 105px;
     list-style: none; /* Отменим точки у списка*/
+    padding: 0px;
 }
 
 .program-selection__hidden{
     visibility: hidden;
 }
+
 /*спрятан весь скрытый текст*/
 
-/*.fieldset{
-    border: transparent;
-}*/
 
 .program-selection__program{
     font-family: Oswald;
@@ -20,4 +23,46 @@
     text-align: left;
     color: #222222;
     text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width){
+    .program-selection{
+        width: 630px;
+        height: 196px;
+        align-items: center;
+        border: solid 1px rgba(205, 205, 205, 0.5);
+        margin-left: 33px;
+    }
+
+    .program-selection__program{
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #222222;
+        text-transform: uppercase;
+    }
+
+    .program-selection__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 133px;
+        list-style: none; /* Отменим точки у списка*/
+        padding: 0px;
+    }
+}
+
+@media (min-width: @desktop-width){
+
+    .program-selection{
+        width: 630px;
+        height: 196px;
+        align-items: center;
+        border: solid 1px rgba(205, 205, 205, 0.5);
+        margin-left: 80px;
+        margin-top: 70px;
+    }
 }

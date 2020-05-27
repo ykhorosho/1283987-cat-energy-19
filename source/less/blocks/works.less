@@ -3,8 +3,206 @@
 }
 
 .works__item-wrapper{
-    display: block;
     width: 60px;
     height: 60px;
     background-color: @leaf;
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+    padding-left: 20px;
+}
+
+.works__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.works__description{
+    width: 200px;
+    padding-left: 20px;
+}
+
+.works__item--petal{
+    display: flex;
+    flex-direction: row;
+    margin-top: -25px;
+}
+
+.works__item-petal--icon{
+    padding-top: 17px;
+    padding-left: 17px;
+}
+
+.works__item--water{
+    display: flex;
+    flex-direction: row;
+    margin-top: -3px;
+}
+
+.works__item-water--icon{
+    padding-top: 15px;
+    padding-left: 16px;
+}
+
+.works__item--cutlery{
+    display: flex;
+    flex-direction: row;
+    margin-top: -3px;
+}
+
+.works__item-cutlery--icon{
+    padding-top: 15px;
+    padding-left: 18px;
+}
+
+.works__item--time{
+    display: flex;
+    flex-direction: row;
+}
+
+.works__item-time--icon{
+    padding-top: 14px;
+    padding-left: 17px;
+}
+
+
+@media (min-width: @tablet-width){
+    .works{
+        height: 760px;
+        padding-left: 30px;
+    }
+
+    .works__wrapper{
+        height: 640px;
+        width: 650px;
+    }
+
+    .works__item-wrapper{
+        width: 80px;
+        height: 80px;
+        background-color: @leaf;
+    }
+
+    .works__item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .works__description{
+        width: 244px;
+        margin-left: -60px;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #444444;
+    }
+    .works__item--petal{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--water{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--cutlery{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--time{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    
+}
+
+
+@media (min-width: @desktop-width){
+    .works {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 360px;
+            padding-left: 110px;
+    }
+
+
+    .works__item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .works__wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        height: 640px;
+        width: 1220px;
+    }
+    .works__item--petal{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--water{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--cutlery{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .works__item--time{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .works__list{
+      width: 1500px;
+    }
+
+    .works__description{
+        padding-top: 15px;
+        width: 245px;
+    }
+
+    .works__item-petal--icon{
+        padding-top: 25px;
+        padding-left: 29px;
+    }
+    
+    .works__item-water--icon{
+        padding-top: 21px;
+        padding-left: 23px;
+    }
+    
+    
+    .works__item-cutlery--icon{
+        padding-top: 20px;
+        padding-left: 28px;
+    }
+
+    
+    .works__item-time--icon{
+        padding-top: 23px;
+        padding-left: 28px;
+    }
 }

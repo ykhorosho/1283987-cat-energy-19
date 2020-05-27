@@ -1,5 +1,8 @@
 .goods__strip{
   display: block;
+  position: absolute;
+  margin-left: 247px;
+  margin-top: -30px;
   width: 53px;
   height: 3px;
   background-color: @leaf;
@@ -27,6 +30,7 @@
 }
 
 .goods__price{
+  padding-right: 20px;
   font-family: Arial;
   font-size: 14px;
   font-weight: normal;
@@ -61,4 +65,212 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.goods{
+  padding-left: 20px;
+  height: 900px;
+}
+
+.goods__list{
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  padding-bottom: 15px;
+}
+
+.goods__alignment{
+  height: 512px;
+}
+
+@media (min-width: @tablet-width){
+  .goods{
+    padding-left: 30px;
+    height: 1100px;
+  }
+
+  .goods__strip{
+    display: block;
+    position: absolute;
+    margin-top: -45px;
+    width: 768px;
+    height: 3px;
+    margin-left: -30px;
+    background-color: @leaf;
+    z-index: -1;
+  }
+  .goods__title{
+    width: 374px;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black-two;
+    padding-left: 30px;
+    background-color: white;
+  }
+  .goods__name{
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  .goods__quantity{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: right;
+    color: #444444;
+  }
+  
+  .goods__price{
+    padding-right: 20px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: right;
+    color: #444444;
+  }
+
+  .goods__strings{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 640px;
+  }
+  
+  .goods__list{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    padding: 0;
+    align-items: center;
+  }
+  .goods__order {
+    width: 633px;
+    height: 40px;
+    background-color: @leaf;
+  }
+  .goods__alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 560px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width){
+
+  .goods__strip{
+    display: block;
+    position: absolute;
+    margin-top: -45px;
+    width: 1440px;
+    height: 3px;
+    margin-left: -30px;
+    background-color: @leaf;
+    z-index: -1;
+  }
+
+  .goods__sweetener{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 885px;
+  }
+
+  .goods__water{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 885px;
+  }
+
+  .goods__milk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 885px;
+  }
+
+  .goods__vitamins{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 885px;
+  }
+
+  .goods__order {
+    width: 245px;
+    height: 40px;
+    background-color: @leaf;
+  }
+
+  .goods__name{
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  .goods__alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 289px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .goods__title{
+    width: 374px;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black-two;
+    padding-left: 30px;
+    margin-left: 50px;
+    background-color: white;
+  }
+
+  .goods__alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  height: 275px;
+  padding-left: 90px;
+  padding-top: 55px;
+  }
+
+  .goods__all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1415px;
+  }
+
+  .goods{
+    height: 500px;
+  }
+
 }

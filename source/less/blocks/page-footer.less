@@ -1,5 +1,8 @@
 .page-footer{
+    display: flex;
+    flex-direction: column;
     background-color: @white-three;
+    height: 236px;
 }
 
 .page-footer_copyright__description {
@@ -10,4 +13,110 @@
     letter-spacing: normal;
     text-align: left;
     color: #444444;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+.page-footer__logo{
+    display: flex;
+    padding-left: 96px;
+    padding-top: 39px;
+}
+
+.social__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 125px;
+    padding-left: 90px;
+    padding-top: 40px;
+}
+
+.page-footer_copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 280px;
+    padding-left: 20px;
+    padding-top: 28px;
+}
+
+@media (min-width: @tablet-width){
+    .page-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: @white-three;
+        width: 768px;
+        height: 150px;
+        align-items: center;
+    }
+    .page-footer__logo{
+        display: flex;
+        padding-left: 31px;
+        padding-top: 0px;
+    }
+    
+    
+    
+    .page-footer_copyright__description {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #444444;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .social__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 125px;
+        padding-top: 0px;
+        padding-left: 90px;
+    }
+    
+    .page-footer_copyright{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 162px;
+        padding-left: 20px;
+    }
+
+    .page-footer_icon{
+        margin-top: -10px;
+    }
+}
+
+
+@media (min-width: @desktop-width){
+    .page-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: @white-three;
+        width: 1440px;
+        height: 150px;
+        align-items: center;
+}
+
+.page-footer__logo{
+    display: flex;
+    padding-left: 110px;
+    padding-top: 0px;
+}
+
+.page-footer_copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 162px;
+    padding-left: 0px;
+    padding-right: 110px;
+}
 }

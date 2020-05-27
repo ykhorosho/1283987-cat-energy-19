@@ -1,27 +1,25 @@
-.programs__toggle{
-    width: 280px;
-    height: 40px;
-    background-color: @leaf;
+.programs{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  height: 560px;
 }
 
-/* button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    font-family: Oswald;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-  }*/
+.programs__wrapper{
+  width: 280px;
+  padding-top: 10px;
+}
 
 .programs__list{
-    list-style: none; /* Отменим точки у списка*/
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  list-style: none; /* Отменим точки у списка*/
 }
-
 .programs__item{
-  width: 280px;
+  display: flex;
+  height: 266px;
+  padding-left: 20px;
   background-color: @white-three;
 }
 
@@ -34,4 +32,234 @@
   text-align: left;
   color: @black-two;
   text-transform: uppercase;
+}
+
+.programs__title--slim{
+  position: absolute;
+  padding-top: 3px;
+  padding-left: 70px;
+}
+
+.programs__title--pro{
+  position: absolute;
+  padding-left: 50px;
+  margin-top: -20px;
+}
+
+.programs__item--slim{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  margin-left: -20px;
+}
+
+.programs__item-logo--slim{
+  padding-left: 10px;
+  padding-top: 20px;
+  }  
+
+.programs__description--slim{
+  width: 230px;
+  height: 56px;
+  padding-top: 10px;
+}
+
+.programs__description--pro{
+  width: 230px;
+  height: 56px;
+  padding-top: 20px;
+  margin-left: -20px;
+}
+
+
+.programs__part--slim{
+  padding-top: 60px;
+}
+
+.programs__part--pro{
+  padding-top: 60px;
+  margin-left: -20px;
+}
+
+.programs__item-icon{
+  padding-left: 8px;
+}
+
+.programs__item--pro{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 40px;
+  margin-left: -20px;
+  margin-top: 60px;
+}
+
+.programs__item-logo--pro{
+  margin-left: -30px;
+  margin-top: -10px;
+}
+
+@media (min-width: @tablet-width) {
+  .programs{
+    height: 780px;
+    padding-top: 75px;
+    padding-left: 10px;
+  }
+
+  .programs__wrapper{
+    width: 708px;
+    padding-top: 10px;
+  }
+
+  .programs__item{
+    height: 372px;
+  }
+  .programs__title {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black-two;
+    text-transform: uppercase;
+  }
+  .programs__title--slim{
+    position: absolute;
+    padding-top: 45px;
+    padding-left: 0px;
+  }
+
+  .programs__item--slim{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .programs__item-logo--slim{
+    padding-left: 475px;
+    padding-top: 80px;
+    }  
+
+    .programs__description--slim{
+      width: 375px;
+      height: 88px;
+    }   
+    
+    .programs__part--slim{
+      padding-top: 60px;
+    } 
+
+    .programs__title--pro{
+      position: absolute;
+      padding-top: 70px;
+      padding-left: 0px;
+    }
+
+    .programs__description--pro{
+      width: 340px;
+      height: 87px;
+      padding-top: 20px;
+    }
+
+    .programs__item--pro{
+      height: auto;
+      padding-left: 70px;
+    }
+
+    .programs__item-logo--pro{
+      padding-left: 475px;
+      padding-top: 50px;
+      }  
+}
+
+@media (min-width: @desktop-width){
+  .programs{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    padding-top: 240px;
+  }
+
+  .programs__wrapper{
+    width: 570px;
+    padding-top: 10px;
+    padding-left: 80px
+  }
+
+  .programs__item{
+    height: 375px;
+  }
+
+  .programs__title--slim{    
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 160px;
+}
+.programs__item--slim{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.programs__item{
+  height: 372px;
+}
+.programs__item-logo--slim{
+  padding-left: 45px;
+  padding-top: 80px;
+  }  
+
+  .programs__description--slim{
+    width: 462px;
+    height: 64px;
+    margin: 0;
+    padding-top: 60px;
+}
+.programs__part--slim{
+  padding-top: 40px;
+}   
+
+.programs__item-icon{
+  padding-left: 17px;
+}
+
+.programs__list{
+  display: flex;
+  flex-direction: row;
+}
+
+.programs__item--pro{
+  height: auto;
+    padding: 0px;
+    margin-left: 130px;
+    margin-top: 0px;
+}
+
+.programs__title--pro{
+  margin: 0;
+  position: absolute;
+  padding-top: 75px;
+  padding-left: 215px;
+}
+
+.programs__description--pro{
+  width: 445px;
+  height: 87px;
+  padding-top: 120px;
+  padding-left: 60px;
+  margin: 0;
+  padding-right: 74px;
+}
+.programs__part--pro{
+  padding-top: 15px;
+    padding-left: 75px;
+}
+
+.programs__item-logo--pro{
+  padding-left: 150px;
+  padding-top: 50px;
+  }  
 }
